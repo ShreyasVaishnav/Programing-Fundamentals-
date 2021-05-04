@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+/* Program to convert Celsius to Fahrenheit */
+
+int main()
+{
+    int F, C;
+    int lower, upper, step;
+    
+    lower = 0;
+    step = 10;
+    upper = 100;
+    
+    C = lower;
+    
+    while(C<=upper)
+    {
+        F = (C * 1.8) + 32;
+        printf("%d \t %d \n", C, F);
+        C = C + step;
+    }
+}
